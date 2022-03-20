@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C71C9627E7B55300E00AB1 /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29C71C9527E7B55300E00AB1 /* Renderer.mm */; };
 		29E4793027E6B18E0076E34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4792F27E6B18E0076E34C /* AppDelegate.m */; };
-		29E4793327E6B18E0076E34C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4793227E6B18E0076E34C /* ViewController.m */; };
 		29E4793527E6B1900076E34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E4793427E6B1900076E34C /* Assets.xcassets */; };
-		29E4793827E6B1900076E34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E4793627E6B1900076E34C /* Main.storyboard */; };
 		29E4793A27E6B1900076E34C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4793927E6B1900076E34C /* main.m */; };
 		29E4794527E6B1910076E34C /* CloudRenderingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4794427E6B1910076E34C /* CloudRenderingTests.m */; };
-		29E4794F27E6B1910076E34C /* CloudRenderingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4794E27E6B1910076E34C /* CloudRenderingUITests.m */; };
-		29E4795127E6B1910076E34C /* CloudRenderingUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4795027E6B1910076E34C /* CloudRenderingUITestsLaunchTests.m */; };
+		29E4795E27E6B2120076E34C /* Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 29E4795D27E6B2120076E34C /* Libraries */; };
+		29E4796127E6B2C60076E34C /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E4796027E6B2C60076E34C /* Metal.framework */; };
+		29E4796327E6B2D40076E34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E4796227E6B2D40076E34C /* Foundation.framework */; };
+		29E4796527E6B2DD0076E34C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E4796427E6B2DD0076E34C /* QuartzCore.framework */; };
+		29E4796927E6B5A30076E34C /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29E4796727E6B5A30076E34C /* Renderer.cpp */; };
+		29E4796D27E6F6260076E34C /* RendererView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29E4796C27E6F6260076E34C /* RendererView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +38,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29C71C9527E7B55300E00AB1 /* Renderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
 		29E4792B27E6B18E0076E34C /* CloudRendering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudRendering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E4792E27E6B18E0076E34C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29E4792F27E6B18E0076E34C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		29E4793127E6B18E0076E34C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		29E4793227E6B18E0076E34C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		29E4793427E6B1900076E34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29E4793727E6B1900076E34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29E4793927E6B1900076E34C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29E4793B27E6B1900076E34C /* CloudRendering.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudRendering.entitlements; sourceTree = "<group>"; };
 		29E4794027E6B1910076E34C /* CloudRenderingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudRenderingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E4794427E6B1910076E34C /* CloudRenderingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudRenderingTests.m; sourceTree = "<group>"; };
 		29E4794A27E6B1910076E34C /* CloudRenderingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudRenderingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29E4794E27E6B1910076E34C /* CloudRenderingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudRenderingUITests.m; sourceTree = "<group>"; };
-		29E4795027E6B1910076E34C /* CloudRenderingUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudRenderingUITestsLaunchTests.m; sourceTree = "<group>"; };
+		29E4795D27E6B2120076E34C /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = "<group>"; };
+		29E4796027E6B2C60076E34C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		29E4796227E6B2D40076E34C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		29E4796427E6B2DD0076E34C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29E4796727E6B5A30076E34C /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		29E4796827E6B5A30076E34C /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		29E4796A27E6E0380076E34C /* Common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
+		29E4796B27E6F6260076E34C /* RendererView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererView.h; sourceTree = "<group>"; };
+		29E4796C27E6F6260076E34C /* RendererView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E4796527E6B2DD0076E34C /* QuartzCore.framework in Frameworks */,
+				29E4796327E6B2D40076E34C /* Foundation.framework in Frameworks */,
+				29E4796127E6B2C60076E34C /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +90,11 @@
 		29E4792227E6B18E0076E34C = {
 			isa = PBXGroup;
 			children = (
+				29E4795D27E6B2120076E34C /* Libraries */,
 				29E4792D27E6B18E0076E34C /* CloudRendering */,
 				29E4794327E6B1910076E34C /* CloudRenderingTests */,
-				29E4794D27E6B1910076E34C /* CloudRenderingUITests */,
 				29E4792C27E6B18E0076E34C /* Products */,
+				29E4795F27E6B2C60076E34C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,14 +111,14 @@
 		29E4792D27E6B18E0076E34C /* CloudRendering */ = {
 			isa = PBXGroup;
 			children = (
+				29E4793427E6B1900076E34C /* Assets.xcassets */,
+				29E4793B27E6B1900076E34C /* CloudRendering.entitlements */,
+				29E4796627E6B58D0076E34C /* Renderer */,
+				29E4796B27E6F6260076E34C /* RendererView.h */,
+				29E4796C27E6F6260076E34C /* RendererView.mm */,
 				29E4792E27E6B18E0076E34C /* AppDelegate.h */,
 				29E4792F27E6B18E0076E34C /* AppDelegate.m */,
-				29E4793127E6B18E0076E34C /* ViewController.h */,
-				29E4793227E6B18E0076E34C /* ViewController.m */,
-				29E4793427E6B1900076E34C /* Assets.xcassets */,
-				29E4793627E6B1900076E34C /* Main.storyboard */,
 				29E4793927E6B1900076E34C /* main.m */,
-				29E4793B27E6B1900076E34C /* CloudRendering.entitlements */,
 			);
 			path = CloudRendering;
 			sourceTree = "<group>";
@@ -119,13 +131,25 @@
 			path = CloudRenderingTests;
 			sourceTree = "<group>";
 		};
-		29E4794D27E6B1910076E34C /* CloudRenderingUITests */ = {
+		29E4795F27E6B2C60076E34C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29E4794E27E6B1910076E34C /* CloudRenderingUITests.m */,
-				29E4795027E6B1910076E34C /* CloudRenderingUITestsLaunchTests.m */,
+				29E4796427E6B2DD0076E34C /* QuartzCore.framework */,
+				29E4796227E6B2D40076E34C /* Foundation.framework */,
+				29E4796027E6B2C60076E34C /* Metal.framework */,
 			);
-			path = CloudRenderingUITests;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29E4796627E6B58D0076E34C /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				29E4796A27E6E0380076E34C /* Common.hpp */,
+				29E4796827E6B5A30076E34C /* Renderer.hpp */,
+				29E4796727E6B5A30076E34C /* Renderer.cpp */,
+				29C71C9527E7B55300E00AB1 /* Renderer.mm */,
+			);
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E4795E27E6B2120076E34C /* Libraries in Resources */,
 				29E4793527E6B1900076E34C /* Assets.xcassets in Resources */,
-				29E4793827E6B1900076E34C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E4793327E6B18E0076E34C /* ViewController.m in Sources */,
+				29E4796927E6B5A30076E34C /* Renderer.cpp in Sources */,
 				29E4793A27E6B1900076E34C /* main.m in Sources */,
 				29E4793027E6B18E0076E34C /* AppDelegate.m in Sources */,
+				29C71C9627E7B55300E00AB1 /* Renderer.mm in Sources */,
+				29E4796D27E6F6260076E34C /* RendererView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E4794F27E6B1910076E34C /* CloudRenderingUITests.m in Sources */,
-				29E4795127E6B1910076E34C /* CloudRenderingUITestsLaunchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,17 +318,6 @@
 			targetProxy = 29E4794B27E6B1910076E34C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		29E4793627E6B1900076E34C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29E4793727E6B1900076E34C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		29E4795227E6B1910076E34C /* Debug */ = {
@@ -421,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_ENTITLEMENTS = CloudRendering/CloudRendering.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -428,6 +442,7 @@
 				DEVELOPMENT_TEAM = 7EZ9SP4W4N;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/metal-cpp";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -447,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_ENTITLEMENTS = CloudRendering/CloudRendering.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -454,6 +470,7 @@
 				DEVELOPMENT_TEAM = 7EZ9SP4W4N;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/metal-cpp";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;

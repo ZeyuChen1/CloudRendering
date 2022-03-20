@@ -6,9 +6,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RendererView.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
 
 @end
 
