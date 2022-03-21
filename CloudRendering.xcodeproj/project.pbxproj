@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29C71C9627E7B55300E00AB1 /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29C71C9527E7B55300E00AB1 /* Renderer.mm */; };
+		29C71C9B27E8EC5600E00AB1 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 29C71C9A27E8EC5600E00AB1 /* Shaders.metal */; };
 		29E4793027E6B18E0076E34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4792F27E6B18E0076E34C /* AppDelegate.m */; };
 		29E4793527E6B1900076E34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E4793427E6B1900076E34C /* Assets.xcassets */; };
 		29E4793A27E6B1900076E34C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4793927E6B1900076E34C /* main.m */; };
@@ -39,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		29C71C9527E7B55300E00AB1 /* Renderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
+		29C71C9A27E8EC5600E00AB1 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		29C71C9F27E8F5AF00E00AB1 /* SharedTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedTypes.h; sourceTree = "<group>"; };
 		29E4792B27E6B18E0076E34C /* CloudRendering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudRendering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E4792E27E6B18E0076E34C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29E4792F27E6B18E0076E34C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,7 +57,7 @@
 		29E4796427E6B2DD0076E34C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		29E4796727E6B5A30076E34C /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 		29E4796827E6B5A30076E34C /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
-		29E4796A27E6E0380076E34C /* Common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
+		29E4796A27E6E0380076E34C /* Util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Util.hpp; sourceTree = "<group>"; };
 		29E4796B27E6F6260076E34C /* RendererView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererView.h; sourceTree = "<group>"; };
 		29E4796C27E6F6260076E34C /* RendererView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,14 +114,14 @@
 		29E4792D27E6B18E0076E34C /* CloudRendering */ = {
 			isa = PBXGroup;
 			children = (
-				29E4793427E6B1900076E34C /* Assets.xcassets */,
-				29E4793B27E6B1900076E34C /* CloudRendering.entitlements */,
 				29E4796627E6B58D0076E34C /* Renderer */,
 				29E4796B27E6F6260076E34C /* RendererView.h */,
 				29E4796C27E6F6260076E34C /* RendererView.mm */,
 				29E4792E27E6B18E0076E34C /* AppDelegate.h */,
 				29E4792F27E6B18E0076E34C /* AppDelegate.m */,
 				29E4793927E6B1900076E34C /* main.m */,
+				29E4793B27E6B1900076E34C /* CloudRendering.entitlements */,
+				29E4793427E6B1900076E34C /* Assets.xcassets */,
 			);
 			path = CloudRendering;
 			sourceTree = "<group>";
@@ -144,7 +147,9 @@
 		29E4796627E6B58D0076E34C /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
-				29E4796A27E6E0380076E34C /* Common.hpp */,
+				29C71C9A27E8EC5600E00AB1 /* Shaders.metal */,
+				29C71C9F27E8F5AF00E00AB1 /* SharedTypes.h */,
+				29E4796A27E6E0380076E34C /* Util.hpp */,
 				29E4796827E6B5A30076E34C /* Renderer.hpp */,
 				29E4796727E6B5A30076E34C /* Renderer.cpp */,
 				29C71C9527E7B55300E00AB1 /* Renderer.mm */,
@@ -282,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E4796927E6B5A30076E34C /* Renderer.cpp in Sources */,
+				29C71C9B27E8EC5600E00AB1 /* Shaders.metal in Sources */,
 				29E4793A27E6B1900076E34C /* main.m in Sources */,
 				29E4793027E6B18E0076E34C /* AppDelegate.m in Sources */,
 				29C71C9627E7B55300E00AB1 /* Renderer.mm in Sources */,
@@ -435,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = CloudRendering/CloudRendering.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -463,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = CloudRendering/CloudRendering.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

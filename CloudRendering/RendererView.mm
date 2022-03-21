@@ -31,7 +31,7 @@
 }
 
 - (void) beginRendering {
-    
+    renderer->start_render_loop();
 }
 
 @end
