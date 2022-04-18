@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291A0C7927FB6E8300727204 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 291A0C7827FB6E8300727204 /* Assets */; };
 		29C71C9627E7B55300E00AB1 /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29C71C9527E7B55300E00AB1 /* Renderer.mm */; };
 		29C71C9B27E8EC5600E00AB1 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 29C71C9A27E8EC5600E00AB1 /* Shaders.metal */; };
 		29E4793027E6B18E0076E34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4792F27E6B18E0076E34C /* AppDelegate.m */; };
 		29E4793527E6B1900076E34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E4793427E6B1900076E34C /* Assets.xcassets */; };
 		29E4793A27E6B1900076E34C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4793927E6B1900076E34C /* main.m */; };
-		29E4794527E6B1910076E34C /* CloudRenderingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E4794427E6B1910076E34C /* CloudRenderingTests.m */; };
 		29E4795E27E6B2120076E34C /* Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 29E4795D27E6B2120076E34C /* Libraries */; };
 		29E4796127E6B2C60076E34C /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E4796027E6B2C60076E34C /* Metal.framework */; };
 		29E4796327E6B2D40076E34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E4796227E6B2D40076E34C /* Foundation.framework */; };
@@ -21,24 +21,9 @@
 		29E4796D27E6F6260076E34C /* RendererView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29E4796C27E6F6260076E34C /* RendererView.mm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		29E4794127E6B1910076E34C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29E4792327E6B18E0076E34C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29E4792A27E6B18E0076E34C;
-			remoteInfo = CloudRendering;
-		};
-		29E4794B27E6B1910076E34C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29E4792327E6B18E0076E34C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29E4792A27E6B18E0076E34C;
-			remoteInfo = CloudRendering;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		291A0C7727FB5DED00727204 /* ObjLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjLoader.hpp; sourceTree = "<group>"; };
+		291A0C7827FB6E8300727204 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		29C71C9527E7B55300E00AB1 /* Renderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
 		29C71C9A27E8EC5600E00AB1 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		29C71C9F27E8F5AF00E00AB1 /* SharedTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedTypes.h; sourceTree = "<group>"; };
@@ -48,9 +33,6 @@
 		29E4793427E6B1900076E34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E4793927E6B1900076E34C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29E4793B27E6B1900076E34C /* CloudRendering.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudRendering.entitlements; sourceTree = "<group>"; };
-		29E4794027E6B1910076E34C /* CloudRenderingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudRenderingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29E4794427E6B1910076E34C /* CloudRenderingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudRenderingTests.m; sourceTree = "<group>"; };
-		29E4794A27E6B1910076E34C /* CloudRenderingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudRenderingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E4795D27E6B2120076E34C /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = "<group>"; };
 		29E4796027E6B2C60076E34C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		29E4796227E6B2D40076E34C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,29 +55,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29E4793D27E6B1910076E34C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E4794727E6B1910076E34C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		29E4792227E6B18E0076E34C = {
 			isa = PBXGroup;
 			children = (
+				291A0C7827FB6E8300727204 /* Assets */,
 				29E4795D27E6B2120076E34C /* Libraries */,
 				29E4792D27E6B18E0076E34C /* CloudRendering */,
-				29E4794327E6B1910076E34C /* CloudRenderingTests */,
 				29E4792C27E6B18E0076E34C /* Products */,
 				29E4795F27E6B2C60076E34C /* Frameworks */,
 			);
@@ -105,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				29E4792B27E6B18E0076E34C /* CloudRendering.app */,
-				29E4794027E6B1910076E34C /* CloudRenderingTests.xctest */,
-				29E4794A27E6B1910076E34C /* CloudRenderingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,14 +90,6 @@
 				29E4793427E6B1900076E34C /* Assets.xcassets */,
 			);
 			path = CloudRendering;
-			sourceTree = "<group>";
-		};
-		29E4794327E6B1910076E34C /* CloudRenderingTests */ = {
-			isa = PBXGroup;
-			children = (
-				29E4794427E6B1910076E34C /* CloudRenderingTests.m */,
-			);
-			path = CloudRenderingTests;
 			sourceTree = "<group>";
 		};
 		29E4795F27E6B2C60076E34C /* Frameworks */ = {
@@ -153,6 +111,7 @@
 				29E4796827E6B5A30076E34C /* Renderer.hpp */,
 				29E4796727E6B5A30076E34C /* Renderer.cpp */,
 				29C71C9527E7B55300E00AB1 /* Renderer.mm */,
+				291A0C7727FB5DED00727204 /* ObjLoader.hpp */,
 			);
 			path = Renderer;
 			sourceTree = "<group>";
@@ -177,42 +136,6 @@
 			productReference = 29E4792B27E6B18E0076E34C /* CloudRendering.app */;
 			productType = "com.apple.product-type.application";
 		};
-		29E4793F27E6B1910076E34C /* CloudRenderingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29E4795727E6B1910076E34C /* Build configuration list for PBXNativeTarget "CloudRenderingTests" */;
-			buildPhases = (
-				29E4793C27E6B1910076E34C /* Sources */,
-				29E4793D27E6B1910076E34C /* Frameworks */,
-				29E4793E27E6B1910076E34C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29E4794227E6B1910076E34C /* PBXTargetDependency */,
-			);
-			name = CloudRenderingTests;
-			productName = CloudRenderingTests;
-			productReference = 29E4794027E6B1910076E34C /* CloudRenderingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		29E4794927E6B1910076E34C /* CloudRenderingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29E4795A27E6B1910076E34C /* Build configuration list for PBXNativeTarget "CloudRenderingUITests" */;
-			buildPhases = (
-				29E4794627E6B1910076E34C /* Sources */,
-				29E4794727E6B1910076E34C /* Frameworks */,
-				29E4794827E6B1910076E34C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29E4794C27E6B1910076E34C /* PBXTargetDependency */,
-			);
-			name = CloudRenderingUITests;
-			productName = CloudRenderingUITests;
-			productReference = 29E4794A27E6B1910076E34C /* CloudRenderingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,14 +147,6 @@
 				TargetAttributes = {
 					29E4792A27E6B18E0076E34C = {
 						CreatedOnToolsVersion = 13.3;
-					};
-					29E4793F27E6B1910076E34C = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = 29E4792A27E6B18E0076E34C;
-					};
-					29E4794927E6B1910076E34C = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = 29E4792A27E6B18E0076E34C;
 					};
 				};
 			};
@@ -249,8 +164,6 @@
 			projectRoot = "";
 			targets = (
 				29E4792A27E6B18E0076E34C /* CloudRendering */,
-				29E4793F27E6B1910076E34C /* CloudRenderingTests */,
-				29E4794927E6B1910076E34C /* CloudRenderingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,21 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E4795E27E6B2120076E34C /* Libraries in Resources */,
+				291A0C7927FB6E8300727204 /* Assets in Resources */,
 				29E4793527E6B1900076E34C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E4793E27E6B1910076E34C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E4794827E6B1910076E34C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,35 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29E4793C27E6B1910076E34C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E4794527E6B1910076E34C /* CloudRenderingTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E4794627E6B1910076E34C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		29E4794227E6B1910076E34C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29E4792A27E6B18E0076E34C /* CloudRendering */;
-			targetProxy = 29E4794127E6B1910076E34C /* PBXContainerItemProxy */;
-		};
-		29E4794C27E6B1910076E34C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29E4792A27E6B18E0076E34C /* CloudRendering */;
-			targetProxy = 29E4794B27E6B1910076E34C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		29E4795227E6B1910076E34C /* Debug */ = {
@@ -493,70 +365,6 @@
 			};
 			name = Release;
 		};
-		29E4795827E6B1910076E34C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7EZ9SP4W4N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZeyuChen.CloudRenderingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudRendering.app/Contents/MacOS/CloudRendering";
-			};
-			name = Debug;
-		};
-		29E4795927E6B1910076E34C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7EZ9SP4W4N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZeyuChen.CloudRenderingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudRendering.app/Contents/MacOS/CloudRendering";
-			};
-			name = Release;
-		};
-		29E4795B27E6B1910076E34C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7EZ9SP4W4N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZeyuChen.CloudRenderingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_TARGET_NAME = CloudRendering;
-			};
-			name = Debug;
-		};
-		29E4795C27E6B1910076E34C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7EZ9SP4W4N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZeyuChen.CloudRenderingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_TARGET_NAME = CloudRendering;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,24 +382,6 @@
 			buildConfigurations = (
 				29E4795527E6B1910076E34C /* Debug */,
 				29E4795627E6B1910076E34C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29E4795727E6B1910076E34C /* Build configuration list for PBXNativeTarget "CloudRenderingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29E4795827E6B1910076E34C /* Debug */,
-				29E4795927E6B1910076E34C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29E4795A27E6B1910076E34C /* Build configuration list for PBXNativeTarget "CloudRenderingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29E4795B27E6B1910076E34C /* Debug */,
-				29E4795C27E6B1910076E34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
