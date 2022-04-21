@@ -9,17 +9,25 @@
 
 namespace Util {
 
-    // convenience function for using shared_ptr with Apple objects
+    /**
+     Convenient function for creating a shared_ptr with custom deleter for NSObject objects
+     */
     template <class T>
     inline std::shared_ptr<T> rc(T* ns_object) {
         return std::shared_ptr<T>(ns_object, [](T* obj) { obj->release(); });
     }
     
+    
+    /**
+     Create NSString from C string
+     */
     inline NS::String* ns_str(const char* s) {
         return NS::String::alloc()->init(s, NS::UnicodeStringEncoding);
     }
 
-    
+    /**
+     Get C string from NSString
+     */
     inline const char* c_str(NS::String* s) {
         return s->cString(NS::UnicodeStringEncoding);
     }
@@ -31,11 +39,17 @@ namespace Util {
         }
     };
     
+    /**
+     Convenient method for autoreleasing NSObject objects from a pointer
+     */
     template <class T>
     inline std::unique_ptr<T, NSDeleter> scoped(T* ns_object) {
         return std::unique_ptr<T, NSDeleter>(ns_object);
     }
     
+    /**
+     Creating new autoreleased NSObject
+     */
     template <class _NSObject>
     inline std::unique_ptr<_NSObject, NSDeleter> new_scoped() {
         return std::unique_ptr<_NSObject, NSDeleter>(_NSObject::alloc()->init());
@@ -50,6 +64,9 @@ namespace Math {
     
     constexpr float pi = std::numbers::pi;
     
+    /**
+     Scaling matrix
+     */
     inline float4x4 scale(float x) {
         float4x4 ret = float4x4(x);
         ret.columns[3][3] = 1.0f;
