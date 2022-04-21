@@ -42,6 +42,7 @@
 		29E4796A27E6E0380076E34C /* Util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Util.hpp; sourceTree = "<group>"; };
 		29E4796B27E6F6260076E34C /* RendererView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererView.h; sourceTree = "<group>"; };
 		29E4796C27E6F6260076E34C /* RendererView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererView.mm; sourceTree = "<group>"; };
+		29EC53B62811240300ABFBD9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 		29E4792227E6B18E0076E34C = {
 			isa = PBXGroup;
 			children = (
+				29EC53B62811240300ABFBD9 /* README.md */,
 				291A0C7827FB6E8300727204 /* Assets */,
 				29E4795D27E6B2120076E34C /* Libraries */,
 				29E4792D27E6B18E0076E34C /* CloudRendering */,
